@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+<script>
+  var  vector=[];
+  var f;
+  for(f=0;f<5;f++)
+  {
+    var valor=1+(Math.random()*1000);
+    vector.push(parseInt(valor));
+  }
+  for(f=0;f<vector.length;f++)
+  {
+    document.write(vector[f]+'<br>');
+  }
+  var suma=vector.pop()+vector.pop();
+  document.write('La suma de los dos ultimos valores:'+suma+'<br>');
+  document.write('Vector'+vector.length+'<br>');
+
+</script> 
+</body>
+</html>
